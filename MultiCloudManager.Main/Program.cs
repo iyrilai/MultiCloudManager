@@ -36,7 +36,7 @@ class Android : Navgation
         // call Android kernal
     }
 
-    public void Home()
+    public vitrual void Home()
     {
         // call Android kernal
     }
@@ -46,4 +46,15 @@ enum OS
 {
     Android,
     IOS
+}
+
+// function override
+class AndroidOP : Android
+{
+    public override void Home()
+    {
+        // our extra code
+        base.Home();
+        // our extra code
+    }
 }
